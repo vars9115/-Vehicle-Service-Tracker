@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>🚗 Vehicle Service Tracker</h2>
+        <a href="#home">Home</a>
+        <a href="#add">Add Service</a>
+        <a href="#history">History</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Vehicle Service Tracker</h1>
+        <p>Track your vehicle maintenance and service records easily.</p>
+    </section>
+
+    <section id="add" class="container">
+        <h2>Add Vehicle Service</h2>
+
+        <form id="serviceForm">
+
+            <input type="text" id="vehicleNumber"
+                   placeholder="Vehicle Number" required>
+
+            <input type="text" id="vehicleModel"
+                   placeholder="Vehicle Model" required>
+
+            <input type="date" id="serviceDate" required>
+
+            <input type="text" id="serviceType"
+                   placeholder="Service Type" required>
+
+            <input type="number" id="amount"
+                   placeholder="Service Amount" required>
+
+            <input type="date" id="nextService" required>
+
+            <button type="submit">Add Service</button>
+
+        </form>
+    </section>
+
+    <section id="history" class="container">
+        <h2>Service History</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Vehicle No.</th>
+                    <th>Model</th>
+                    <th>Service Date</th>
+                    <th>Service Type</th>
+                    <th>Amount</th>
+                    <th>Next Service</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="serviceTable">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
